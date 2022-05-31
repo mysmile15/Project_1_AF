@@ -1,1 +1,56 @@
-<p>meeting works!</p>
+<div class="container-fluid py-3">
+
+    <div class="row w-100 m-0">
+
+        <div class="col-12 {{viewMeetingBool ? 'col-sm-8' : 'col-sm'}}">
+       
+            <h4>Meeting Dashboard</h4>
+
+                <div class="d-flex flex-wrap">
+                     <button type="button" class="btn btn-sm me-1" *ngFor="let status of meetingStatus; index as idx" [ngClass]="{
+                        'btn-dark': meetingStatusIdx === status.value,
+                        'btn-outline-dark': meetingStatusIdx !== status.value
+                    }" (click)="changeMeetingStatus(status.value)">
+                    {{ status.name }}
+                    </button>
+                </div>
+        
+
+            <table class="table">
+                 <thead>
+                    <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Time</th>
+                    <th scope="col">Client</th>
+                    <th scope="col">Project</th>
+                    <th scope="col">Meeting Subject</th>
+                    <th scope="col">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                     <tr *ngFor = "let meeting of meetingObservable | async; index as idx">
+                    <th scope="row">{{idx+1}}</th>
+                    <td>{{meeting["meetingDate"]}}</td>
+                    <td>{{meeting["meetingTime"]}}</td>
+                    <td>{{meeting["fullName"]}}</td>
+                    <td>{{meeting["projectTitle"]}}</td>
+                    <td>{{meeting["meetingSubject"]}}</td>
+                    <td>
+                        <button type="button" class="btn btn-dark btn-sm">
+                         
+                        Edit</button> &nbsp;
+                        <button type="button" class="btn btn-danger btn-sm">Delete</button> &nbsp;
+                        
+                    </td>
+                    </tr>
+       
+                 </tbody>
+            </table>
+
+        </div>
+   
+
+   
+    </div>
+</div>

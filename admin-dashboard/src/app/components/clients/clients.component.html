@@ -1,1 +1,75 @@
-<p>clients works!</p>
+<div class="container-fluid py-3">
+    <div class="row w-100 m-0">
+    
+        <div class="col-12 {{viewClientsBool ? 'col-sm-8' : 'col-sm'}}">
+               <h4>Clients Dashboard</h4>
+                <table class="table">
+                <thead>
+                  <tr>
+                     <th scope="col">#</th>
+                     <th scope="col">Username</th>
+                     <th scope="col">Fullname</th>
+                     <th scope="col">Email</th>
+                     <th scope="col">Phone</th>
+                     <th scope="col">Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor = "let clients of clientsObservable | async; index as idx">
+                         <th scope="row">{{idx+1}}</th>
+                         <td>{{clients["username"]}}</td>
+                         <td>{{clients["fullName"]}}</td>
+                         <td>{{clients["email"]}}</td>
+                         <td>{{clients["phone"]}}</td>
+                         <td>
+                             
+                             <button type="button" class="btn btn-primary btn-sm mb-1 {{viewClientsIdx === idx ? 'd-flex align-items-center':''}}" (click)="openViewModal(clients, idx)">View Details</button> &nbsp;
+                             <button type="button" class="btn btn-dark btn-sm">Edit User</button>
+                         </td>
+                    </tr>
+          
+                </tbody>
+                </table>
+        </div>
+
+
+        <div class="col-12 col-sm-4" *ngIf="viewClientsBool">
+            <div class="card">
+                <div class="card-header bg-white border-0">
+                    <div class="d-flex justify-content-between align-items-center">
+                            <h5>Meetings</h5>
+                            <button type="button" class="btn btn-dark btn-sm" (click)="closeViewModal()">close</button>
+                    </div>
+                </div>
+                <div class="table-responsive">
+                    <div class="table">
+                        <thead class="thead-light">
+                            <tr>
+                                <th >Meeting Date</th>
+                                <th class="text-center">Meeting Time</th>
+                                <th class="text-center">Subject</th>
+                                <th class="text-center">Projects</th>
+                            </tr>
+                            
+                        </thead>
+                        <tbody>
+                            <tr *ngFor = "let met of clientsModel.meeting; index as idx">
+                                <td  class="text-center">{{met["meetingDate"]}} </td>
+                                <td class="text-center">{{met["meetingTime"]}}</td>
+                                <td class="text-center">{{met["meetingSubject"]}}</td>
+                                <td class="text-center">{{met["projectTitle"]}}</td>
+                            </tr>
+                        </tbody>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+
+
+    </div>
+</div>

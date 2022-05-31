@@ -1,0 +1,9 @@
+#bg{
+    background: linear-gradient(to bottom right, #90979e, #070707);
+}
+
+.form-group .input-group .input[type="text"]:focus{
+    border: none !important;
+    outline: none !important;
+}
+

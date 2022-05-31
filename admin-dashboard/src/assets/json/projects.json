@@ -1,0 +1,80 @@
+[
+    {
+        "projectId":1,
+        "projectTitle":"Home Design for Smith",
+        "projectDescription":"Give 3 house plans, floor plans & blueprints. Provide cost reports",
+        "projectTimeline":{
+            "timelineID":1,
+            "duration":7,
+            "dateStart":"2022-05-06",
+            "dateEnd":"2022-05-13",
+            "active": true
+        },
+        "images":[
+            "https://www.coolhouseplans.com/varnish-images/plans/80523/80523-b440.jpg", 
+            "https://images.homify.com/c_fill,f_auto,q_0,w_740/v1515404333/p/photo/image/2380606/floor-plan-1.jpg", 
+            "https://i.pinimg.com/736x/d2/dc/c0/d2dcc0a6d07f24b668a9a96fbf180d28--duplex-house-design-duplex-house-plans.jpg", 
+            "https://i.etsystatic.com/28692092/r/il/ff7cc2/2975714184/il_794xN.2975714184_s8z6.jpg" 
+        ],
+        "price":"$20,000",
+        "priority":1,
+
+        "ClientId":1, 
+        "username":"Will",
+        "fullName":"Will Smith",
+        "email":"will.smith@gmail.com",
+        "phone":9498886666
+    },
+    {
+        "projectId":2,
+        "projectTitle":"Garden Design for White",
+        "projectDescription":"Give 3 garden design plans. Provide cost reports",
+        "projectTimeline":{
+            "timelineID":1,
+            "duration":7,
+            "dateStart":"2022-05-07",
+            "dateEnd":"2022-05-14",
+            "active": true
+        },
+        "images":[
+            "https://www.ruthbancroftgarden.org/wp/wp-content/uploads/riley2105-321-scaled.jpg", 
+            "https://www.ruthbancroftgarden.org/wp/wp-content/uploads/riley2105-383-800x534.jpg", 
+            "https://st.hzcdn.com/simgs/pictures/landscapes/raised-gardens-and-dry-rivers-be-landscape-design-img~ec91b2b40cb11725_4-9677-1-3a7e127.jpg", 
+            "https://cdn.mos.cms.futurecdn.net/w8ZixymPeQVNCrRpGcyoDV.jpg" 
+        ],
+        "price":"$10,000",
+        "priority":0,
+
+        "clientId":2,
+        "username":"Niko",
+        "fullName":"Niko White",
+        "email":"niko.white@gmail.com",
+        "phone":6865554444
+    },
+    {
+        "projectId":3,
+        "projectTitle":"Room Design for Dong",
+        "projectDescription":"Give 3 room design plans. Provide cost reports",
+        "projectTimeline":{
+            "timelineID":1,
+            "duration":7,
+            "dateStart":"2022-05-08",
+            "dateEnd":"2022-05-15",
+            "active": true
+        },
+        "images":[
+            "http://cdn.home-designing.com/wp-content/uploads/2014/08/playful-bedroom-decor.jpeg", 
+            "https://img.staticmb.com/mbcontent//images/uploads/2020/11/modern%20bedroom%20interior%20design.jpg", 
+            "https://cdn.mos.cms.futurecdn.net/ncV9sbkuxEN3mtyYAaVYzR-768-80.jpg", 
+            "https://www.contemporist.com/wp-content/uploads/2016/12/floating-bed-131216-1053-23-800x534.jpg" 
+        ],
+        "price":"$5,000",
+        "priority":0,
+
+        "clientId":3,
+        "username":"Emily",
+        "fullName":"Emily Dong",
+        "email":"emily.dong@gmail.com",
+        "phone":7774445555
+    }
+]

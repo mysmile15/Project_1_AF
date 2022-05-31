@@ -1,0 +1,54 @@
+[
+    {
+        "meetingID":1,
+        "meetingDate":"2022-05-22",
+        "meetingTime":"18:00:00",
+        "meetingStatus":"active",
+        "meetingSubject":"1st Meeting-present the ideas",
+        
+        "ClientId":1,        
+        "username":"Will",
+        "fullName":"Will Smith",
+        "email":"will.smith@gmail.com",
+        "phone":9498886666,
+
+        "projectId":1,
+        "projectTitle":"Home Design for Smith",
+        "projectDescription":"Give 3 house plans, floor plans & blueprints. Provide cost reports"
+    },
+    {
+        "meetingID":2,
+        "meetingDate":"2022-05-23",
+        "meetingTime":"09:00:00",
+        "meetingStatus":"active",
+        "meetingSubject":"Discuss about the floor plan and budget",
+        
+        "clientId":2,
+        "username":"Niko",
+        "fullName":"Niko White",
+        "email":"niko.white@gmail.com",
+        "phone":6865554444,
+
+        "projectId":2,
+        "projectTitle":"Garden Design for White",
+        "projectDescription":"Give 3 garden design plans. Provide cost reports"
+    },
+    {
+        "meetingID":3,
+        "meetingDate":"2022-05-24",
+        "meetingTime":"11:00:00",
+        "meetingStatus":"active",
+        "meetingSubject":"Present the revision",
+        
+        "clientId":3,
+        "username":"Emily",
+        "fullName":"Emily Dong",
+        "email":"emily.dong@gmail.com",
+        "phone":7774445555,
+
+        "projectId":3,
+        "projectTitle":"Room Design for Dong",
+        "projectDescription":"Give 3 room design plans. Provide cost reports"
+    }
+
+]

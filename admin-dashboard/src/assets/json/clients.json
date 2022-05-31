@@ -1,0 +1,78 @@
+[
+    {
+        "clientId":1,
+        "username":"Will",
+        "fullName":"Will Smith",
+        "address":{
+            "street":"566 Denali Street",
+            "city":"Hollywood",
+            "state":"CA",
+            "country":"US",
+            "zipcode":"90000"
+        },
+        "email":"will.smith@gmail.com",
+        "img":"",
+        "phone":9498886666,
+        "meeting": [
+            {
+                "meetingID":1,
+                "meetingDate":"2022-05-22",
+                "meetingTime":"18:00:00",
+                "meetingSubject":"1st Meeting-present the ideas",
+                "projectId":1,
+                "projectTitle":"Home Design for Smith"            
+            }
+        ]
+    },
+    {
+        "clientId":2,
+        "username":"Niko",
+        "fullName":"Niko White",
+        "address":{
+            "street":"777 Milkyway circle",
+            "city":"Houston",
+            "state":"TX",
+            "country":"US",
+            "zipcode":"80000"
+        },
+        "email":"niko.white@gmail.com",
+        "img":"",
+        "phone":6865554444,
+        "meeting": [
+            {
+                "meetingID":2,
+                "meetingDate":"2022-05-23",
+                "meetingTime":"09:00:00",
+                "meetingSubject":"Discuss about the floor plan and budget",
+                "projectId":2,
+                "projectTitle":"Garden Design for White"            
+            }
+        ]
+
+    },
+    {
+        "clientId":3,
+        "username":"Emily",
+        "fullName":"Emily Dong",
+        "address":{
+            "street":"780 strawberry st",
+            "city":"Chicago",
+            "state":"Illinois",
+            "country":"US",
+            "zipcode":"70000"
+        },
+        "email":"emily.dong@gmail.com",
+        "img":"",
+        "phone":7774445555,
+        "meeting": [
+            {
+                "meetingID":3,
+                "meetingDate":"2022-05-24",
+                "meetingTime":"11:00:00",
+                "meetingSubject":"Present the revision",
+                "projectId":3,
+                "projectTitle":"Room Design for Dong"            
+            }
+        ]
+    }
+]
