@@ -1,0 +1,17 @@
+CREATE TABLE MEETINGS(
+    meetingId INTEGER NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    meetingDate DATETIME,
+    meetingTime DATETIME,
+    meetingSubject VARCHAR(500) NOT NULL,
+    meetingStatus INTEGER NOT NULL,
+    clientId INTEGER NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    username VARCHAR(500) NOT NULL,
+    fullName VARCHAR(500) NOT NULL,
+    email VARCHAR(500) NOT NULL,
+    phone INTEGER NOT NULL,
+    projectId INTEGER NOT NULL,
+    projectTitle VARCHAR(500) NOT NULL,
+    projectDescription VARCHAR(500) NOT NULL,
+    FOREIGN KEY (projectId) REFERENCES RPOJECTS(projectId),
+    FOREIGN KEY (clientId) REFERENCES CLIENTS(clientId)
+);
